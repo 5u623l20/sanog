@@ -93,7 +93,9 @@ title = "South Asian Network Operators Group"
 <p><a href="sanog33/index.html">SANOG 33: 09-16 January, 2019, Bhutan</a></p>
 <p><a href="sanog32/index.html">SANOG 32: 02 - 10 August, 2018, Dhaka, Bangladesh</a></p>
 <p><a href="https://2018.apricot.net/">SANOG 31: 19 February - 28 February, 2018, Kathmandu, Nepal</a></p>
+
 [SANOG 31: 19 February - 28 February, 2018, Kathmandu, Nepal](https://2018.apricot.net)
+
 <p><a href="sanog30/index.html">SANOG 30: 10 July - 18 July, 2017, Gurgaon, India</a></p>
 <p><a href="sanog29/index.html">SANOG 29: 23 January - 30 January, 2017, Islamabad, Pakistan</a></p>
 <p><a href="sanog28/index.html">SANOG 28: 01 - 09 August, 2016, Mumbai, India</a></p>
