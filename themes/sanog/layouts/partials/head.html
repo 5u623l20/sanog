@@ -1,10 +1,25 @@
-<header>
-	<div class="main">
-		<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+<head>
+	<title>{{ .Site.Title }}</title>
+	<div class="main" align="Center">
+		<p>
+			<a href="index.html"><img src="images/logo.jpg" width="283" height="88" usemap="#Map" border="0" alt="sanog.org" align="Top"></a>
+		</p>
+		<p>
+			<font size="5" face="Arial, Helvetica, sans-serif" color="#000000">
+				<strong>
+					{{ .Site.Title }}
+				</strong>
+			</font>
+			<font color="#000000"><br>
+			    <font size="4" face="Times New Roman, Times, serif">
+					<i>A non-profit forum for Data Network Operators in South Asia</i>
+				</font>
+			</font>
+		</p>
 	</div>
 	<nav>
 		{{ range .Site.Menus.main }}
 			<a href="{{ .URL }}">{{ .Name }}</a>
 		{{ end }}
 	</nav>
-</header>
+</head>
