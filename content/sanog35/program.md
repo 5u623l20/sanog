@@ -1,6 +1,5 @@
 +++
 title = "SANOG 35 | Program Schedule"
-type = "pages"
 +++
 
 [<img src="../images/logo.jpg" width="283" height="88" alt="sanog.org" />](../index.html)
