@@ -1,0 +1,27 @@
++++
+title = "SANOG28 | Attendee List"
++++
+
+[<img src="../images/logo.jpg" width="283" height="88" alt="sanog.org" />](../index.html)
+
+**South Asian Network Operators Group**  
+*A non-profit forum for Data Network Operators in South Asia*
+
+-   [Home](index.html)
+-   [Program](program.html)
+-   [Registration](reg.html)
+-   [Attendee](attendee.html)
+-   [Fellowship](fellowship.html)
+-   [Venue](venue.html)
+-   [Accommodation](accomo.html)
+-   [VISA](visa.html)
+-   [Resources](downloads.html)
+-   [Gallery](gallery.html)
+
+SANOG 28 :-- Attendee List -:
+-----------------------------
+
+Registration is still open -- Online & On-site complete list will be
+updated soon
+
+  

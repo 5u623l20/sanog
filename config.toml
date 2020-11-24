@@ -1,0 +1,8 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "South Asian Network Operators Group"
+theme = "sanog"
+uglyurls = true
+
+[markup.goldmark.renderer]
+unsafe= true

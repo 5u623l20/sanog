@@ -1,0 +1,35 @@
++++
+title = "SANOG30 | Resources"
++++
+
+[<img src="../images/logo.jpg" width="283" height="88" alt="sanog.org" />](../index.html)
+
+**South Asian Network Operators Group**  
+*A non-profit forum for Data Network Operators in South Asia*
+
+-   [Home](index.html)
+-   [Program](program.html)
+-   [Registration](reg.html)
+-   [Fellowship](fellowship.html)
+-   [Venue](venue.html)
+-   [Accommodation](accomo.html)
+-   [VISA/Immigration](visa.html)
+-   [Resources](downloads.html)
+-   [Gallery](gallery.html)
+
+Resources
+---------
+
+##### SANOG XXX
+
+10-18 July, 2017
+
+[Ramada Gurgaon Central](http://www.ramadagurgaoncentral.com/)
+
+Gurgaon, Haryana, India
+
+Resources for SANOG 30 will be open soon...
+
+  
+
+ 
