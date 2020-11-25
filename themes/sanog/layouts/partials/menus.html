@@ -1,0 +1,42 @@
+<!-- Primary Navigation
+============================================= -->
+
+{{- if .Site.Menus.main }}
+<nav class="primary-menu">
+	<ul class="menu-container">
+		{{- $currentNode := . }}
+		{{- range .Site.Menus.main }}
+		{{- if .Name }}
+		{{- if .HasChildren }}
+		<li class="menu-item {{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu-item--active{{ end }}">
+			<a class="menu-link" href="{{ .URL }}">
+				<div>
+					{{ .Name }}
+				</div>
+			</a>
+			<ul class="sub-menu-container">
+				{{ range .Children }}
+					<li class="menu-item{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu-item--active{{ end }}">
+						<a class="menu-link" href="{{ .URL }}">
+							<div>
+								{{ .Name }}
+							</div>
+						</a>
+					</li>
+				{{ end }}
+			</ul>
+		</li>
+		{{- else }}
+		<li class="menu-item{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu-item--active{{ end }}"> 
+			<a class="menu-link" href="{{ .URL }}">
+				<div>
+					{{ .Name }}
+				</div>
+			</a>
+		</li>
+		{{- end }}
+		{{- end }}
+		{{- end }}
+	</ul>
+</nav>
+{{- end }}

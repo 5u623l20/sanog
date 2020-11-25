@@ -13,8 +13,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo" class="mr-lg-5">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/logo.jpg"><img src="images/logo.jpg"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="images/logo@2x.jpg"><img src="images/logo@2x.jpg" alt="SANOG"></a>
+						<a href="index.html" class="standard-logo" data-dark-logo="../images/logo.jpg"><img src="images/logo.jpg"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="../images/logo@2x.jpg"><img src="images/logo@2x.jpg" alt="SANOG"></a>
 					</div><!-- #logo end -->
 
 					<div id="primary-menu-trigger">
@@ -23,46 +23,11 @@
 
 					<!-- Primary Navigation
 					============================================= -->
-
-					{{- if .Site.Menus.main }}
-					<nav class="primary-menu">
-						<ul class="menu-container">
-							{{- $currentNode := . }}
-							{{- range .Site.Menus.main }}
-							{{- if .Name }}
-							{{- if .HasChildren }}
-							<li class="menu-item {{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu-item--active{{ end }}">
-								<a class="menu-link" href="{{ .URL }}">
-									<div>
-										{{ .Name }}
-									</div>
-								</a>
-								<ul class="sub-menu-container">
-									{{ range .Children }}
-										<li class="menu-item{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu-item--active{{ end }}">
-										<a class="menu-link" href="{{ .URL }}">
-											<div>
-												{{ .Name }}
-											</div>
-										</a>
-										</li>
-									{{ end }}
-								</ul>
-							</li>
-							{{- else }}
-							<li class="menu-item{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu-item--active{{ end }}"> 
-								<a class="menu-link" href="{{ .URL }}">
-									<div>
-										{{ .Name }}
-									</div>
-								</a>
-							</li>
-							{{- end }}
-							{{- end }}
-							{{- end }}
-						</ul>
-					</nav>
-					{{- end }}
+					{{ if eq .Type "page" }}
+						{{- partial "menus.html" . -}}
+					{{ else }}
+						{{- partial "fixedmenus.html" . -}}
+					{{ end }}
 
 				</div>
 			</div>
@@ -70,3 +35,20 @@
 		<div class="header-wrap-clone"></div>
 	</header><!-- #header end -->
 
+	{{ if eq .Type "events" }}
+		<section id="slider" class="slider-element h-auto" style="background-color: #222;">
+			<div class="slider-inner">
+
+				<div class="owl-carousel carousel-widget" data-margin="0" data-items="1" data-pagi="false" data-loop="true" data-animate-in="rollIn" data-speed="450" data-animate-out="rollOut" data-autoplay="5000">
+					{{- $eventname := .File.BaseFileName }} 
+					{{- $dir := ( printf "static/slider/%s" $eventname ) }} 
+					{{- $files := readDir (print $dir ) }} 
+					{{- range $files -}} 
+						<a href="#"><img src="slider/{{ $eventname }}/{{ .Name }}" alt="Slider"></a>
+					{{ end }}
+
+				</div>
+
+			</div>
+		</section>
+	{{ end }}
