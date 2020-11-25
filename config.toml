@@ -3,6 +3,97 @@ languageCode = "en-us"
 title = "South Asian Network Operators Group"
 theme = "sanog"
 uglyurls = true
+copyright = "Copyrights {year} All rights reserved by SANOG."
 
 [markup.goldmark.renderer]
 unsafe= true
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "resources"
+    name = "Resources"
+    url = "resources.html"
+    weight = 11
+  [[menu.main]]
+    identifier = "meetings"
+    name = "Meetings"
+    weight = 21
+  [[menu.main]]
+    identifier = "meetings-future"
+    name = "Future Meetings"
+    url = "future.html"
+    parent = "meetings"
+    weight = 1
+  [[menu.main]]
+    identifier = "meetings-previous"
+    name = "Previous Meetings"
+    url = "previous.html"
+    parent = "meetings"
+    weight = 1
+  [[menu.main]]
+    identifier = "fellowship"
+    name = "Fellowship"
+    url = "fellowship.html"
+    weight = 31
+  [[menu.main]]
+    identifier = "fellowship-application"
+    name = "Application"
+    url = "fellowship/application.html"
+	parent = "fellowship"
+    weight = 1
+  [[menu.main]]
+    identifier = "mailinglist"
+    name = "Mailing List"
+    url = "mailinglist.html"
+    weight = 41
+  [[menu.main]]
+    identifier = "about"
+    name = "About Us"
+    url = "introduction.html"
+    weight = 51
+  [[menu.main]]
+    identifier = "about-background"
+    name = "Background"
+    url = "background.html"
+    parent = "about"
+	weight = 1
+  [[menu.main]]
+    identifier = "about-committee"
+    name = "Committee"
+    url = "committee.html"
+    parent = "about"
+	weight = 2
+  [[menu.main]]
+    identifier = "about-sponsorship"
+    name = "Sponsorship"
+    url = "sponsorship.html"
+    parent = "about"
+	weight = 3
+  [[menu.main]]
+    identifier = "about-hosting"
+    name = "Hosting"
+    url = "hosting.html"
+    parent = "about"
+	weight = 4
+  [[menu.main]]
+    identifier = "about-presentation"
+    name = "Presentation"
+    url = "presentation.html"
+    parent = "about"
+	weight = 5
+  [[menu.main]]
+    identifier = "about-partnerships"
+    name = "Partnerships"
+    url = "partnerships.html"
+    parent = "about"
+	weight = 6
+  [[menu.main]]
+    identifier = "about-contact"
+    name = "Contact Us"
+    url = "contact.html"
+    parent = "about"
+	weight = 7
