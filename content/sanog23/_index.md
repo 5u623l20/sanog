@@ -1,5 +1,6 @@
 +++
 title = "SANOG XXIII | Main Page"
+type = "events"
 +++
 
 [<img src="../images/logo.jpg" width="283" height="88" alt="sanog.org" />](../index.html)
@@ -30,7 +31,7 @@ title = "SANOG XXIII | Main Page"
 <td style="text-align: center;"><strong>SANOG XXIII</strong></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><p>• <a href="program.htm">Program</a><br />
+<td style="text-align: center;"><p>• <a href="program.html">Program</a><br />
 • <a href="registration.htm">Registration</a><br />
 • <a href="fellowship.htm">Fellowship</a><br />
 • <a href="accommodation.htm">Accommodation</a><br />
