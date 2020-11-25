@@ -3,10 +3,7 @@ title = "SANOG 35 | Home"
 type = "events"
 +++
 
--   [Venue](venue.html)
--   [Accommodation](accomo.html)
-
-# Welcome to SANOG35 - Karachi, Pakistan {id=home}
+# Welcome to SANOG35 - Karachi, Pakistan {#home}
 
 ***"You will yet be the glory of the East; would that I could come again & again, Karachi, to see you in your grandeur!!"***
 
